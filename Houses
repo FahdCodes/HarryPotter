@@ -2,6 +2,8 @@ class House():
 
 
     def __init__(self, name, color, founder, head, animal, element, traits=[], members=[]):
+        self.school = "Hogwarts"
+        self.headmaster = "Professor Albus Dumbledore"
         self.name = name
         self.founder = founder
         self.color = color
