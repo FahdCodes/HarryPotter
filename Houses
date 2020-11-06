@@ -1,0 +1,36 @@
+class House():
+
+
+    def __init__(self, name, color, founder, head, animal, element, traits=[], members=[]):
+        self.name = name
+        self.founder = founder
+        self.color = color
+        self.head = head
+        self.animal = animal
+        self.element = element
+        self.traits = traits
+        self.members = []
+
+    def SortingHat(self, name, *traits):
+        if name not in self.members:
+            for trait in traits:
+                if trait in self.traits:
+                    print("Welcome to {}".format(self.name))
+                    self.members.append(name)
+                    break
+                else:
+                    print("Not a {}".format(self.name))
+        else:
+            print("Already a {}".format(self.name))
+
+
+
+
+
+Gryffindor = House("Gryffindor", "Scarlet and Gold", "Godric Gryffindor", "Minerva McGonagall", "Lion", "Fire", ["Courage", "Bravery", "Determination", "Daring", "Nerve", "Chivalry"])
+
+Hufflepuff = House("Hufflepuff", "Yellow and Black", "Helga Hufflepuff", "Pomona Sprout", "Badget", "Earth", ["Hard-working", "Patience", "Fairness", "Just", "Loyalty", "Modesty"])
+
+Ravenclaw = House("Ravenclaw", "Blue and Bronze", "Rowena Ravenclaw", "Filius Flitwick", "Eagle", "Air", ["Wit", "Learning", "Wisdom", "Acceptance", "Intelligence", "Creativity"])
+
+Slytherin = House("Slytherin", "Green and Silver", "Salazar Slytherin", "Severus Snape", "Serpent", "Water", ["Resourcefulness", "Pride", "Cunning", "Ambition", "Self-preservation"])
